@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" href="#" type="image/png">
+			<title>ID Project</title>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<!-- <link rel="stylesheet" href="./assets/libs/jQuery/jquery-ui.min.css"> -->
+			<script src="./assets/libs/jQuery/jquery-3.2.1.min.js"></script>
+			<script src="./assets/libs/jQuery/jquery-ui.min.js"></script>
+			<script src="./assets/libs/angularjs/angular.min.js"></script>
+			<script src="./assets/libs/angularjs/angular-animate.min.js"></script>
+			<script src="./assets/libs/angularjs/angular-route.js"></script>
+			<!-- <link rel="stylesheet" href="./assets/libs/bootstrap-3.3.7/css/bootstrap.css"> -->
+			<link rel="stylesheet" href="./assets/libs/bootstrap-4/css/bootstrap.min.css">
+			<script src="./assets/libs/bootstrap-4/js/popper.min.js"></script>
+			<script src="./assets/libs/bootstrap-4/js/bootstrap.min.js"></script>
+			<script src="./assets/libs/ui-bootstrap-tpls.min.js"></script>
+			<link rel="stylesheet" href="./assets/libs/font-awesome-4.6.3/css/font-awesome.min.css">
+			<link rel="stylesheet" href="./assets/css/styles.css">
+			<!--  -->
+			<script src="./app/global/app.js"></script>
+			<script src="./app/global/route.js"></script>
+			<script src="./app/global/mainController.js"></script>
+	</head>
+	<body data-ng-app="lssApp" data-ng-controller="mainController" >
+		<div>
+			<!-- HEADER -->
+			<div class="page-header text-center">
+				<h1 class="shake-content margin-botton-0">
+					HEADER
+				</h1>
+			</div>
+			
+			<!-- NAVBAR -->
+			<!-- class: bg-dark -->
+			<nav class="navbar navbar-expand-md navbar-light sticky-top">
+				<!-- Brand -->
+				<!-- <a class="navbar-brand" href="#">Navbar</a> -->
+				
+				<!-- Toggler/collapsibe Button -->
+				<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button> -->
+				<div class="container-menu-button navbar-toggler margin-left-auto" data-toggle="collapse" data-target="#collapsibleNavbar" ng-class="{'change':isChangeActive}" ng-click="myFunction()">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+				<!-- Navbar links -->
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav margin-left-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#!aboutUs">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#!contact">Contact</a>
+						</li> 
+					</ul>
+				</div> 
+			</nav>
+		</div>
+		<br>
+		<ng-view class="fade container">
+			<p class="text-center">
+				<b class="opacity-5">
+					Loading.........
+				</b>
+				<i class="fa fa-spinner fa-spin"></i>
+			</p>
+		</ng-view>
+</body>
+</html>

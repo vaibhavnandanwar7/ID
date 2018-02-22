@@ -18,11 +18,15 @@
 			<script src="./assets/libs/bootstrap-4/js/bootstrap.min.js"></script>
 			<script src="./assets/libs/ui-bootstrap-tpls.min.js"></script>
 			<link rel="stylesheet" href="./assets/libs/font-awesome-4.6.3/css/font-awesome.min.css">
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4ESWn_9eiMqloNa99XdwVdyHbgCFHIWw"></script>
+			<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4ESWn_9eiMqloNa99XdwVdyHbgCFHIWw&callback=myMap"></script> -->
 			<link rel="stylesheet" href="./assets/css/styles.css">
+			
 			<!--  -->
 			<script src="./app/global/app.js"></script>
 			<script src="./app/global/route.js"></script>
 			<script src="./app/global/mainController.js"></script>
+			<script src="./app/home/contactController.js"></script>
 	</head>
 	<body data-ng-app="lssApp" data-ng-controller="mainController" >
 		<div>
@@ -52,13 +56,13 @@
 				<div class="collapse navbar-collapse" id="collapsibleNavbar">
 					<ul class="navbar-nav margin-left-auto">
 						<li class="nav-item">
-							<a class="nav-link" href="#">Portfolio</a>
+							<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Portfolio' }" href="#">Portfolio</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#!aboutUs">About</a>
+							<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'About' }" href="#!aboutUs">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#!contact">Contact</a>
+							<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Contact' }" href="#!contact">Contact</a>
 						</li> 
 					</ul>
 				</div> 

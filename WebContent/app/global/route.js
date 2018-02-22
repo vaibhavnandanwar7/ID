@@ -10,7 +10,7 @@
 			//controller : "searchResultsController"
 		}).when("/contact", {
 			templateUrl : "./app/home/contact.html",
-			//controller : "searchResultsController"
+			controller : "contactController"
 		});
 	});
 	

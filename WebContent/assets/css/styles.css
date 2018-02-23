@@ -185,15 +185,22 @@ body{
 /**Google Map*/
 .map{
 	width:100%;
-	height:300px
+	height:25em;
 }
 
 /**Contact Page*/
 .contantContainer{
     background-color: #f2f2f2;
-    padding: 3em 2em;
+    padding: 1em 2em;
 }
-
+.contact-page-details{
+	color: #ffffffd4;
+    /* background-color: #00234cd6; 
+    background-color: #0a2a3b; */
+    /* background: linear-gradient(to right,#54eaf2 0,#83a4d4 100%); */
+    background: linear-gradient(to right,#57aee8 0,#36cd96 100%);
+    padding: 1em;
+}
 /** Font Awesome */
 .fa {
     padding: 0.5em;
@@ -206,8 +213,9 @@ body{
 }
 
 .fa:hover {
-    opacity: 0.7;
+    opacity: 0.5;
     text-decoration: none;
+    color: white;
 }
 
 .fa-facebook {

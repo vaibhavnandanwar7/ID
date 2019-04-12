@@ -1,4 +1,180 @@
-<h1 class="home">
-	Home
-</h1>
+<!--Carousel Wrapper-->
+<div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half container" data-ride="carousel">
+	<!--Indicators-->
+	<ol class="carousel-indicators">
+		<li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+		<li data-target="#carousel-example-2" data-slide-to="1"></li>
+		<li data-target="#carousel-example-2" data-slide-to="2"></li>
+	</ol>
+	<!--/.Indicators-->
+	<!--Slides-->
+	<div class="carousel-inner" role="listbox">
+	    <div class="carousel-item active">
+			<div class="view">
+				<img class="d-block w-100 h-31em" src="./assets/images/image_1.jpeg" alt="First slide">
+	        	<div class="mask rgba-black-light"></div>
+	      	</div>
+	      <!-- <div class="carousel-caption">
+	        <h3 class="h3-responsive">This is the first title</h3>
+	        <p>First text</p>
+	      </div> -->
+	    </div>
+	    <div class="carousel-item">
+	      <!--Mask color-->
+			<div class="view">
+				<img class="d-block w-100 h-31em" src="./assets/images/image_4.jpeg" alt="Second slide">
+				<div class="mask rgba-black-light"></div>
+			</div>
+	      <!-- <div class="carousel-caption">
+	        <h3 class="h3-responsive">Thir is the second title</h3>
+	        <p>Secondary text</p>
+	      </div> -->
+	    </div>
+		<div class="carousel-item">
+		<!--Mask color-->
+			<div class="view">
+				<img class="d-block w-100 h-31em" src="./assets/images/image_6.jpeg" alt="Third slide">
+				<div class="mask rgba-black-light"></div>
+			</div>
+			<!-- <div class="carousel-caption">
+        	<h3 class="h3-responsive">This is the third title</h3>
+        	<p>Third text</p>
+      	</div> -->
+		</div>
+	</div>
+  <!--/.Slides-->
+  <!--Controls-->
+	<a class="carousel-control-prev" data-target="#carousel-example-2" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" data-target="#carousel-example-2" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+  <!--/.Controls-->
+</div>
+<!--/.Carousel Wrapper-->
 
+<div class="row">
+  <div class="column">
+    <img src="./assets/images/image_1.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor w-100 h-8em">
+  </div>
+  <div class="column">
+    <img src="./assets/images/image_2.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor w-100 h-8em">
+  </div>
+  <div class="column">
+    <img src="./assets/images/image_3.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor w-100 h-8em">
+  </div>
+  <div class="column">
+    <img src="./assets/images/image_4.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor w-100 h-8em">
+  </div>
+  <div class="column">
+    <img src="./assets/images/image_5.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor w-100 h-8em">
+  </div>
+  <div class="column">
+    <img src="./assets/images/image_6.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor w-100 h-8em">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="./assets/images/image_1.jpeg" class="w-100">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="./assets/images/image_2.jpeg" class="w-100">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="./assets/images/image_3.jpeg" class="w-100">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="./assets/images/image_4.jpeg" class="w-100">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="./assets/images/image_5.jpeg" class="w-100">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="./assets/images/image_6.jpeg" class="w-100">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor w-100" src="./assets/images/image_1.jpeg" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor w-100" src="./assets/images/image_2.jpeg" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo cursor w-100" src="./assets/images/image_3.jpeg" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor w-100" src="./assets/images/image_4.jpeg" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor w-100" src="./assets/images/image_5.jpeg" onclick="currentSlide(5)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor w-100" src="./assets/images/image_6.jpeg" onclick="currentSlide(6)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
